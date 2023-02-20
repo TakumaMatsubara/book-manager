@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+kotlin-server-side-programming-practice/
+docker/db/
+docker/redis/
