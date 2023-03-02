@@ -21,7 +21,7 @@ class BookController(
         val bookList = bookService.getList().map {
             BookInfo(it)
         }
-        return GetBookListResponse(bookList)
+        return GetBookListResponse(bookList) // GetBookListResponse(bookList=[BookInfo(id=100, title=Kotolin beginners, author=Kotlin Taro,...])
     }
 
     @GetMapping("/detail/{book_id}")

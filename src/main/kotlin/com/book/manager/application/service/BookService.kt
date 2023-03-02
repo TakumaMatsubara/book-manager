@@ -9,10 +9,10 @@ class BookService(
     private val bookRepository: BookRepository
 ) {
     fun getList(): List<BookWithRental> {
-        return bookRepository.findAllWithRental()
+        return bookRepository.findAllWithRental() // [BookWithRental(book=Book(id=100, title=Kotolin beginners, author=Kotlin Taro, releaseDate=1950-10-01), rental=null),...]
     }
 
     fun getDetail(bookId: Long): BookWithRental {
-        return bookRepository.findWithRental(bookId) ?: throw IllegalArgumentException("存在しない書籍ID: $bookId")
+        return bookRepository.findWithRental(bookId) ?: throw IllegalArgumentException("存在しない書籍ID: $bookId") // BookWithRental(book=Book(id=100, title=Kotolin beginners, author=Kotlin Taro, releaseDate=1950-10-01), rental=null)
     }
 }

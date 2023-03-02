@@ -6,6 +6,8 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
   jackson:
     property-naming-strategy: SNAKE_CASE
+    parser:
+      allow_unquoted_field_names: true
 # ロギングに関する設定
 logging:
   level:
