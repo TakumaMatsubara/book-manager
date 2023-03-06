@@ -23,7 +23,7 @@ class BookRepositoryImpl(
     private val bookMapper: BookMapper
 ) : BookRepository {
     override fun findAllWithRental(): List<BookWithRental> {
-        return bookWithRentalMapper.select().map { toModel(it) }
+        return bookWithRentalMapper.select().map { toModel(it) } // [BookWithRental(book=Book(id=100, title=Kotolin beginners, author=Kotlin Taro, releaseDate=1950-10-01), rental=null),...]
     }
 
     override fun findWithRental(id: Long): BookWithRental? {
