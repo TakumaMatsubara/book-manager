@@ -22,11 +22,14 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2")
 	implementation("org.mybatis.dynamic-sql:mybatis-dynamic-sql:1.2.1") // add
 	implementation("mysql:mysql-connector-java:8.0.23") //add
-	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0") // 追加
+	implementation("org.springframework.session:spring-session-data-redis") // add
+	implementation("redis.clients:jedis") // add
+	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0") // add
 //	mybatisGenerator("gradle.plugin.com.thinkimi.gradle:mybatis-generator-plugin:2.4") //add
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
