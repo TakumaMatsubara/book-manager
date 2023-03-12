@@ -29,6 +29,7 @@ dependencies {
 	implementation("mysql:mysql-connector-java:8.0.23") //add
 	implementation("org.springframework.session:spring-session-data-redis") // add
 	implementation("redis.clients:jedis") // add
+	implementation("org.springframework.boot:spring-boot-starter-aop") //add
 	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0") // add
 //	mybatisGenerator("gradle.plugin.com.thinkimi.gradle:mybatis-generator-plugin:2.4") //add
 
