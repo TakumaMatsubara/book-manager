@@ -33,7 +33,11 @@ dependencies {
 	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0") // add
 //	mybatisGenerator("gradle.plugin.com.thinkimi.gradle:mybatis-generator-plugin:2.4") //add
 
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.1")
+	testImplementation("org.assertj:assertj-core:3.19.0") // add
+	testImplementation("org.springframework.boot:spring-boot-starter-test") // add
+	testImplementation("org.mockito:mockito-core:3.8.0") // add
+	testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0") // add
 }
 
 tasks.withType<KotlinCompile> {
